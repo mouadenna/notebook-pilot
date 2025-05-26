@@ -1,0 +1,52 @@
+[
+    {
+      "type": "markdown",
+      "name": "introduction",
+      "dependencies": [],
+      "content": "This notebook explores a regression model on energy data.",
+      "goals": "Set context"
+    },
+    {
+      "type": "code",
+      "name": "load_data",
+      "dependencies": ["introduction"],
+      "content": "import pandas as pd\ndata = pd.read_csv('energy.csv')\ndata.head()",
+      "goals": "Load and preview the dataset",
+      "output": {
+        "stdout": "",
+        "result": [
+          {
+            "column1": "value",
+            "column2": "value"
+          },
+          "... (first few rows)"
+        ],
+        "error": null
+      }
+    },
+    {
+      "type": "code",
+      "name": "preprocess_data",
+      "dependencies": ["load_data"],
+      "content": "data = data.dropna()\ndata['date'] = pd.to_datetime(data['date'])",
+      "goals": "Clean and prepare data for modeling",
+      "output": {
+        "stdout": "",
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "type": "code",
+      "name": "train_model",
+      "dependencies": ["preprocess_data"],
+      "content": "from sklearn.linear_model import LinearRegression\nmodel = LinearRegression()\nmodel.fit(data[['feature1']], data['target'])",
+      "goals": "Train a linear regression model",
+      "output": {
+        "stdout": "",
+        "result": "LinearRegression()",
+        "error": null
+      }
+    }
+  ]
+  
