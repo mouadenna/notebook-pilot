@@ -1,6 +1,3 @@
 {
-  "apiKey": "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",
-  "model": "openai/gpt-4o",
-  "baseURL": "https://models.github.ai/inference",
-  "publisher": "azure"
-}
+
+} 
