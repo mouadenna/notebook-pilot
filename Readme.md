@@ -3,7 +3,6 @@
 This report presents a conceptual framework and a prototype design for an automated, multi-AI agent system aimed at transforming the manual and iterative process of developing data science workflows in Jupyter Notebooks.
 
 ---
-
 ### Problem Statement
 
 The traditional development of data science notebooks is time-consuming and iterative. Automating this process can enhance productivity, ensure consistency, and expedite insights.
